@@ -7,8 +7,10 @@ use Cyndaron\DBAL\DBConnection;
 use Cyndaron\Module\Datatype;
 use Cyndaron\Module\Datatypes;
 use Cyndaron\Module\Routes;
+use Cyndaron\Module\Templated;
+use Cyndaron\Module\TemplateRoot;
 
-final class Module implements Routes, Datatypes
+final class Module implements Routes, Datatypes, Templated
 {
     public function routes(): array
     {
@@ -34,5 +36,10 @@ final class Module implements Routes, Datatypes
     public function getList(): array
     {
         return DBConnection::doQueryAndFetchAll('SELECT CONCAT(\'/concert/order/\', id) AS link, CONCAT(\'Concert: \', name) AS name FROM ticketsale_concerts') ?: [];
+    }
+
+    public function getTemplateRoot(): TemplateRoot
+    {
+        return new TemplateRoot('Ticketsale', __DIR__);
     }
 }
