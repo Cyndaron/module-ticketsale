@@ -13,13 +13,12 @@ let addressIsAbroad = false;
 let defaultDeliveryCost;
 let reservedSeatCharge;
 
-$.ajax('/api/concert/getInfo/' + concertId, {}).done(function (json)
+$.ajax('/api/concert/getInfo/' + concertId, { dataType: "json" }).done(function (json)
 {
-    let data = JSON.parse(json);
-    tickettypes = data.tickettypes;
-    forcedDelivery = data.forcedDelivery;
-    defaultDeliveryCost = data.defaultDeliveryCost;
-    reservedSeatCharge = data.reservedSeatCharge;
+    tickettypes = json.tickettypes;
+    forcedDelivery = json.forcedDelivery;
+    defaultDeliveryCost = json.defaultDeliveryCost;
+    reservedSeatCharge = json.reservedSeatCharge;
 });
 
 function increase(vak)
