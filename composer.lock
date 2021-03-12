@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0bd3ce8d3ae419cc445f531bd2da903d",
+    "content-hash": "1854c581966e12301aa82d8218690574",
     "packages": [
         {
             "name": "components/jquery",
@@ -155,7 +155,7 @@
         },
         {
             "name": "cyndaron/util",
-            "version": "dev-master",
+            "version": "v1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cyndaron/util.git",
@@ -180,7 +180,6 @@
                 "roave/security-advisories": "dev-master",
                 "thecodingmachine/phpstan-safe-rule": "^1.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -200,29 +199,29 @@
             ],
             "description": "General utility classes for Cyndaron",
             "support": {
-                "source": "https://github.com/Cyndaron/util/tree/master",
+                "source": "https://github.com/Cyndaron/util/tree/v1",
                 "issues": "https://github.com/Cyndaron/util/issues"
             },
             "time": "2021-03-12T13:04:14+00:00"
         },
         {
             "name": "cyndaron/view",
-            "version": "dev-master",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cyndaron/view.git",
-                "reference": "46a58d52775d9654696fb920eda93288145ebcd9"
+                "reference": "233d9d53cc22b9f895608547fccfcb370894164e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cyndaron/view/zipball/46a58d52775d9654696fb920eda93288145ebcd9",
-                "reference": "46a58d52775d9654696fb920eda93288145ebcd9",
+                "url": "https://api.github.com/repos/Cyndaron/view/zipball/233d9d53cc22b9f895608547fccfcb370894164e",
+                "reference": "233d9d53cc22b9f895608547fccfcb370894164e",
                 "shasum": ""
             },
             "require": {
                 "cyndaron/dbal": "^1.0",
                 "cyndaron/module": "^1.0",
-                "cyndaron/util": "9999999-dev",
+                "cyndaron/util": "^1.0",
                 "php": "^7.4",
                 "thecodingmachine/safe": "^1.1"
             },
@@ -234,7 +233,6 @@
                 "roave/security-advisories": "dev-master",
                 "thecodingmachine/phpstan-safe-rule": "^1.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -254,10 +252,10 @@
             ],
             "description": "View and template components Cyndaron",
             "support": {
-                "source": "https://github.com/Cyndaron/view/tree/master",
+                "source": "https://github.com/Cyndaron/view/tree/v1.0.2",
                 "issues": "https://github.com/Cyndaron/view/issues"
             },
-            "time": "2021-03-12T12:56:10+00:00"
+            "time": "2021-03-12T13:17:49+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -1981,12 +1979,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cyndaron/Cyndaron.git",
-                "reference": "76866ccb23311db7cd22a463b86b82ec8b2d58a4"
+                "reference": "448fabe4e214a6ac4b85e8e890f135526f212dce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cyndaron/Cyndaron/zipball/76866ccb23311db7cd22a463b86b82ec8b2d58a4",
-                "reference": "76866ccb23311db7cd22a463b86b82ec8b2d58a4",
+                "url": "https://api.github.com/repos/Cyndaron/Cyndaron/zipball/448fabe4e214a6ac4b85e8e890f135526f212dce",
+                "reference": "448fabe4e214a6ac4b85e8e890f135526f212dce",
                 "shasum": ""
             },
             "require": {
@@ -1997,6 +1995,9 @@
                 "cyndaron/module": "^1.0",
                 "cyndaron/module-geelhoed": "dev-master",
                 "cyndaron/module-minecraft": "dev-master",
+                "cyndaron/module-ticketsale": "dev-master",
+                "cyndaron/util": "^1.0",
+                "cyndaron/view": "^1.0",
                 "ext-fileinfo": "*",
                 "ext-gd": "*",
                 "ext-imagick": "*",
@@ -2041,7 +2042,7 @@
                 "source": "https://github.com/Cyndaron/Cyndaron/tree/master",
                 "issues": "https://github.com/Cyndaron/Cyndaron/issues"
             },
-            "time": "2021-03-11T21:58:04+00:00"
+            "time": "2021-03-12T13:20:30+00:00"
         },
         {
             "name": "cyndaron/module-geelhoed",
@@ -6423,8 +6424,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "cyndaron/util": 20,
-        "cyndaron/view": 20,
         "cyndaron/cyndaron": 20,
         "roave/security-advisories": 20
     },

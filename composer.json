@@ -46,8 +46,8 @@
     "thecodingmachine/safe": "^1.1",
     "cyndaron/module": "^1.0",
     "cyndaron/dbal": "^1.0",
-    "cyndaron/util": "9999999-dev",
-    "cyndaron/view": "9999999-dev"
+    "cyndaron/util": "^1.0",
+    "cyndaron/view": "^1.0"
   },
   "require-dev": {
     "cyndaron/cyndaron": "dev-master",
