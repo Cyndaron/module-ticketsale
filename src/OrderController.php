@@ -3,13 +3,13 @@ declare(strict_types=1);
 
 namespace Cyndaron\Ticketsale;
 
-use Cyndaron\Routing\Controller;
 use Cyndaron\DBAL\DBConnection;
-use Cyndaron\Page;
-use Cyndaron\Mail\Mail;
 use Cyndaron\Request\RequestParameters;
-use Cyndaron\Template\ViewHelpers;
+use Cyndaron\Routing\Controller;
 use Cyndaron\User\UserLevel;
+use Cyndaron\Util\Mail\Mail;
+use Cyndaron\View\Page;
+use Cyndaron\View\Template\ViewHelpers;
 use Exception;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;

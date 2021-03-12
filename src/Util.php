@@ -1,9 +1,9 @@
 <?php
 namespace Cyndaron\Ticketsale;
 
-use Cyndaron\Template\Template;
+use Cyndaron\View\Template\Template;
 
-final class Util extends \Cyndaron\Util
+final class Util extends \Cyndaron\Util\Util
 {
     public const MAX_RESERVED_SEATS = 330;
 

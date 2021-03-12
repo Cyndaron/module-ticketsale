@@ -2,7 +2,7 @@
 namespace Cyndaron\Ticketsale;
 
 use Cyndaron\DBAL\DBConnection;
-use Cyndaron\Page;
+use Cyndaron\View\Page;
 
 final class OrderTicketsPage extends Page
 {

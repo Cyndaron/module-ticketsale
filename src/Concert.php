@@ -4,8 +4,8 @@ declare(strict_types=1);
 namespace Cyndaron\Ticketsale;
 
 use Cyndaron\DBAL\DBConnection;
-use Cyndaron\Error\IncompleteData;
 use Cyndaron\DBAL\Model;
+use Cyndaron\Util\Error\IncompleteData;
 use Exception;
 use function range;
 

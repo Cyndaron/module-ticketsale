@@ -4,8 +4,8 @@ declare(strict_types=1);
 namespace Cyndaron\Ticketsale;
 
 use Cyndaron\Routing\Controller;
-use Cyndaron\Page;
 use Cyndaron\User\UserLevel;
+use Cyndaron\View\Page;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use function assert;

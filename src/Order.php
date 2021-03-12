@@ -4,9 +4,9 @@ declare(strict_types=1);
 namespace Cyndaron\Ticketsale;
 
 use Cyndaron\DBAL\DBConnection;
-use Cyndaron\Error\IncompleteData;
 use Cyndaron\DBAL\Model;
-use Cyndaron\Mail\Mail;
+use Cyndaron\Util\Mail\Mail;
+use Cyndaron\Util\Error\IncompleteData;
 use Symfony\Component\Mime\Address;
 use function assert;
 

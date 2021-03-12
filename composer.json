@@ -18,6 +18,14 @@
     },
     {
       "type": "vcs",
+      "url": "https://github.com/Cyndaron/util"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/Cyndaron/view"
+    },
+    {
+      "type": "vcs",
       "url":  "https://github.com/Cyndaron/Cyndaron"
     },
     {
@@ -37,7 +45,9 @@
     "symfony/http-foundation": "^5.0",
     "thecodingmachine/safe": "^1.1",
     "cyndaron/module": "^1.0",
-    "cyndaron/dbal": "^1.0"
+    "cyndaron/dbal": "^1.0",
+    "cyndaron/util": "9999999-dev",
+    "cyndaron/view": "9999999-dev"
   },
   "require-dev": {
     "cyndaron/cyndaron": "dev-master",
