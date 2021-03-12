@@ -8,7 +8,7 @@ final class OrderTicketsPage extends Page
 {
     public function __construct(int $concertId)
     {
-        $this->addScript('/src/Ticketsale/OrderTicketsPage.js');
+        $this->addScript('/vendor/cyndaron/module-ticketsale/src/OrderTicketsPage.js');
 
         $concert = new Concert($concertId);
         $concert->load();

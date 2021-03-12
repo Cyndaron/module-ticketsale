@@ -25,7 +25,7 @@ final class ConcertOrderOverviewPage extends Page
         $orders = DBConnection::doQueryAndFetchAll(self::ORDERS_QUERY, [$concert->id]);
         $ticketTypesByOrder = $this->getTicketTypesPerOrder($concert);
         parent::__construct('Overzicht bestellingen: ' . $concert->name);
-        $this->addScript('/src/Ticketsale/ConcertOrderOverviewPage.js');
+        $this->addScript('/vendor/cyndaron/module-ticketsale/src/ConcertOrderOverviewPage.js');
         $this->addTemplateVars([
             'ticketTypes' => $ticketTypes,
             'concert' => $concert,
